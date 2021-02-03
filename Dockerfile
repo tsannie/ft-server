@@ -6,9 +6,11 @@
 #    By: tsannie <tsannie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/02 12:38:57 by tsannie           #+#    #+#              #
-#    Updated: 2021/02/03 13:56:45 by tsannie          ###   ########.fr        #
+#    Updated: 2021/02/03 14:52:49 by tsannie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+#docker build -t name .
 
 FROM debian:buster
 
@@ -22,3 +24,8 @@ RUN apt-get clean \
 
 # docker build -t ftserv .
 # docker image ls
+# docker history ftserv
+# docker run -tid --name test ftserv
+# docker exec -ti test sh
+# docker rm -f test
+# docker rmi ftserv
