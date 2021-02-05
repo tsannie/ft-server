@@ -15,7 +15,6 @@
  * cookie. Needs to be 32 chars long.
  */
 $cfg['blowfish_secret'] = 'YbUGvyMzuwPahhrVnzIXiMIQUcZbuhZt'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
-$cfg['TempDir'] = './tmp';
 /**
  * Servers configuration
  */
@@ -73,6 +72,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;
  */
 $cfg['UploadDir'] = '';
 $cfg['SaveDir'] = '';
+$cfg['TempDir'] = '/tmp';
 
 /**
  * Whether to display icons or text or both icons and text in table row

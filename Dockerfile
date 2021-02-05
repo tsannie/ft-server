@@ -6,7 +6,7 @@
 #    By: tsannie <tsannie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/02 12:38:57 by tsannie           #+#    #+#              #
-#    Updated: 2021/02/05 13:44:46 by tsannie          ###   ########.fr        #
+#    Updated: 2021/02/05 14:49:08 by tsannie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,13 @@ FROM debian:buster
 MAINTAINER Théo SANNIE <tsannie@42.student.fr>
 
 # Moove config-files
-COPY ./srcs/launch.sh ./
+COPY ./srcs/launch.sh ./tmp/
 COPY ./srcs/nginx-conf ./tmp/
 COPY ./srcs/phpmyadmin.inc.php ./tmp/
 COPY ./srcs/wp-config.php ./tmp/
 
 # Launch server
-CMD bash launch.sh
+CMD bash tmp/launch.sh
 
 
 # docker build -t ftserv .
