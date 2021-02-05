@@ -1,7 +1,7 @@
 server {
 	listen 80;
 	listen [::]:80;
-	server_name monsupersite;
+	server_name my_website;
 	return 301 https://$host$request_uri;
 }
 
@@ -9,13 +9,13 @@ server{
 
 	listen 443 ssl ;
 	listen [::]:443 ssl ;
-	
-	server_name monsupersite;
-	
-	ssl_certificate /etc/nginx/ssl/monsupersite.pem;
-	ssl_certificate_key /etc/nginx/ssl/monsupersite.key;
 
-	root /var/www/monsupersite;
+	server_name my_website;
+
+	ssl_certificate /etc/nginx/ssl/my_website.pem;
+	ssl_certificate_key /etc/nginx/ssl/my_website-key.pem;
+
+	root /var/www/my_website;
 	index index.html index.htm index.nginx-debian.html index.php;
 
 	location / {
@@ -28,4 +28,3 @@ server{
 		fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 	}
 }
-
