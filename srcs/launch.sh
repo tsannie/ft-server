@@ -20,8 +20,6 @@ openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out /etc/nginx/ssl/
 chown -R www-data /var/www/*
 chmod -R 755 /var/www/*
 mkdir /var/www/my_website
-touch /var/www/my_website/index.php
-echo "<?php phpinfo(); ?>" >> /var/www/my_website/index.php
 
 # DL PHPMyAdmin
 mkdir /var/www/my_website/phpmyadmin
