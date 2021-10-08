@@ -1,7 +1,7 @@
 # ft-server
 This topic is intended to introduce to system administration. This allowed me to discover the use of Docker.
 
-It's my first project of 42cursus. (2020-2021) 💻
+42cursus - (2020-2021) 💻
 
 * Result : 100/100 ✅
 
